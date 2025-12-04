@@ -32,9 +32,9 @@ st.set_page_config(page_title="Medical Prediction System", layout="wide")
 menu = ["🏠Home", "Prediction","Hosipital Spiscelity","Career","contacts Us"]
 choice = st.sidebar.selectbox("Navigation", menu)
 
-# -------------------------------
+
 #   HOME PAGE
-# -------------------------------
+
 if choice == "🏠Home":
     st.title("🏥 VELAN Medical Disease Prediction System")
     st.write("""
@@ -47,9 +47,9 @@ if choice == "🏠Home":
     """)
     st.image("C:/Users/svel2/Downloads/forstrem.jpg")
 
-# -------------------------------
+
 #   PREDICTION PAGE
-# -------------------------------
+
 elif choice == "Prediction":
 
     st.title("🧠 Disease Prediction Panel")
@@ -58,9 +58,9 @@ elif choice == "Prediction":
     sub_menu = ["Kidney Prediction", "Liver Prediction", "Parkinson Prediction"]
     sub_choice = st.selectbox("Choose Prediction Type", sub_menu)
 
-    # ---------------------------
+    
     # Kidney Prediction
-    # ---------------------------
+    
     if sub_choice == "Kidney Prediction":
 
         st.header("🩸 Kidney Disease Prediction")
@@ -130,9 +130,9 @@ elif choice == "Prediction":
 
             st.success(f"Liver result: {result}")
 
-    # ---------------------------
+   
     # Parkinson Prediction
-    # ---------------------------
+    
     elif sub_choice == "Parkinson Prediction":
 
         st.header("🧠 Parkinson Disease Prediction")
@@ -170,6 +170,7 @@ elif choice == "Prediction":
         st.success(f"Liver result: {result2}")
 
        
+
 
 
 
